@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why React?</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚛️</text></svg>">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <!-- React ライブラリ -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- 基本UIコンポーネント（最初に読み込む） -->
+    <script type="text/babel" src="components/Button.js"></script>
+    <script type="text/babel" src="components/Card.js"></script>
+    <script type="text/babel" src="components/FormInput.js"></script>
+
+    <!-- 共通コンポーネント -->
+    <script type="text/babel" src="components/HeaderWithNav.js"></script>
+    <script type="text/babel" src="components/Router.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/Features.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+
+    <!-- ページコンポーネント -->
+    <script type="text/babel" src="pages/Home.js"></script>
+    <script type="text/babel" src="pages/About.js"></script>
+    <script type="text/babel" src="pages/Contact.js"></script>
+
+    <!-- メインアプリケーション -->
+    <script type="text/babel" src="App.js"></script>
+</body>
+</html>
