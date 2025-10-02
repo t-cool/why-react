@@ -1,5 +1,5 @@
 // Router.js - URLルーティング機能を提供するコンポーネント
-const Router = () => {
+function Router() {
     // URLパスからページを判定
     const getPageFromPath = (pathname) => {
         // パスの正規化（最初と最後のスラッシュを削除）
@@ -92,7 +92,7 @@ const Router = () => {
 };
 
 // リンクコンポーネント（オプション：通常のリンクのような動作）
-const Link = ({ to, children, style = {}, className = '' }) => {
+function Link({ to, children, style = {}, className = '' }) {
     const handleClick = (e) => {
         e.preventDefault();
 

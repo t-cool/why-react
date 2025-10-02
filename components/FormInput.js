@@ -1,5 +1,5 @@
 // FormInput.js - 再利用可能なフォーム入力コンポーネント
-const FormInput = ({
+function FormInput({
     label,
     type = 'text',
     name,
@@ -11,7 +11,7 @@ const FormInput = ({
     disabled = false,
     rows, // textarea用
     style = {}
-}) => {
+}) {
     const [isFocused, setIsFocused] = React.useState(false);
 
     const labelStyle = {
@@ -100,7 +100,7 @@ const FormInput = ({
 };
 
 // フォームグループコンポーネント（複数の入力フィールドをグループ化）
-const FormGroup = ({ children, title }) => {
+function FormGroup({ children, title }) {
     return (
         <div style={{
             marginBottom: '30px',

@@ -1,5 +1,5 @@
 // HeaderWithNav.js - ナビゲーション機能付きヘッダーコンポーネント
-const HeaderWithNav = ({ currentPage, onPageChange }) => {
+function HeaderWithNav({ currentPage, onPageChange }) {
     const navItems = [
         { id: 'home', label: 'ホーム' },
         { id: 'about', label: '機能' },

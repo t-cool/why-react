@@ -1,7 +1,7 @@
 // Hero.js - ヒーローセクションコンポーネント
 // メインビジュアルとCTAボタンを含む独立したコンポーネント
 // Button コンポーネントを使用するように更新
-const Hero = () => {
+function Hero() {
     return (
         <section style={{
             background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
@@ -38,4 +38,4 @@ const Hero = () => {
             </Button>
         </section>
     );
-};
+}

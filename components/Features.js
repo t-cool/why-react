@@ -2,7 +2,7 @@
 // Card コンポーネントを使用するように更新
 
 // メインのFeaturesコンポーネント
-const Features = () => {
+function Features() {
     // 機能データを配列で管理（データとUIの分離）
     const features = [
         {

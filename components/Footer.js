@@ -1,6 +1,6 @@
 // Footer.js - フッターコンポーネント
 // 再利用可能なフッターコンポーネント
-const Footer = () => {
+function Footer() {
     return (
         <footer style={{
             backgroundColor: '#282c34',
