@@ -14,6 +14,8 @@ function Router() {
                 return 'about';
             case 'contact':
                 return 'contact';
+            case 'lesson':
+                return 'lesson';
             default:
                 return 'home';
         }
@@ -67,6 +69,8 @@ function Router() {
                 return <About />;
             case 'contact':
                 return <Contact />;
+            case 'lesson':
+                return <Lesson />;
             default:
                 return <Home />;
         }

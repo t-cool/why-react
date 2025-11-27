@@ -3,6 +3,7 @@ function HeaderWithNav({ currentPage, onPageChange }) {
     const navItems = [
         { id: 'home', label: 'ホーム' },
         { id: 'about', label: '機能' },
+        { id: 'lesson', label: 'Propsについて' },
         { id: 'contact', label: 'お問い合わせ' }
     ];
 
